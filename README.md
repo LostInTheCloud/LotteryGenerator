@@ -9,6 +9,15 @@ requirements:
 
 - cmake
 - make
+- sodium
+
+on Arch:
+
+```
+sudo pacman -S cmake make sodium
+```
+
+finally:
 
 ```bash
 cmake .
