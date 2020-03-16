@@ -14,7 +14,7 @@ requirements:
 on Arch:
 
 ```
-sudo pacman -S cmake make sodium
+sudo pacman -S cmake make libsodium
 ```
 
 finally:
