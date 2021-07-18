@@ -1,0 +1,3 @@
+from archlinux/archlinux:base-devel
+run pacman -Syu --needed cmake make libsodium fish --noconfirm
+run chsh -s /bin/fish
