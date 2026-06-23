@@ -5,20 +5,33 @@ This lottery number generator is as universal as possible. Use the generic funct
 
 ### To compile and run:
 
-requirements:
+#### Option A: Using Nix (Recommended)
 
+If you have Nix installed with flakes enabled:
+
+```bash
+# Build the project
+nix build
+
+# Run EuroJackpot
+./result/bin/EuroJackpot
+```
+
+You can also enter a development environment with all dependencies preloaded by running `nix develop`.
+
+#### Option B: Manual Installation
+
+Requirements:
 - cmake
 - make
-- sodium
+- libsodium
 
-on Arch:
-
-```
+On Arch:
+```bash
 sudo pacman -S cmake make libsodium
 ```
 
-finally:
-
+Finally, build and run:
 ```bash
 cmake .
 make

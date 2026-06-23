@@ -98,9 +98,9 @@ int contains(uint64_t num, uint64_t* array, int length)
 
 int compare( const void* a, const void* b)
 {
-    int int_a = * ( (int*) a );
-    int int_b = * ( (int*) b );
+    uint64_t val_a = * ( (const uint64_t*) a );
+    uint64_t val_b = * ( (const uint64_t*) b );
 
     // an easy expression for comparing
-    return (int_a > int_b) - (int_a < int_b);
+    return (val_a > val_b) - (val_a < val_b);
 }
